@@ -1,5 +1,69 @@
 .header-main {
     background: url('../images/content/header-image.jpeg');
     background-size: cover;
+    background-position: top right;
     min-height: 100vh;
+}
+
+.header-bar {
+    height: 140px;
+    display:flex;
+    align-items: center;
+
+    &__logo {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: $text-color;
+       transition: opacity .5s ease;
+        &:hover {
+            opacity: .6;
+        }
+    }
+
+    &__menu {
+        margin-left: 100px;
+    }
+
+    &__menu-item {
+        display: inline-block;
+       /* &:not(:last-child) {
+            margin-right: 0;*/
+            & + & {
+                margin-left: 21px;
+            }
+        }
+        &__menu-link{
+            color: $second-text-color;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            transition: color .5s ease;
+            letter-spacing: 0.2px;
+            &:hover {
+                color: $text-color;
+                
+            }
+        }
+    }
+ 
+.header-hero {
+    &__title {
+        font-weight: 800;
+            font-size: 58px;
+            line-height: 80px;
+            letter-spacing: 0.2px;
+            color: $text-color;
+            text-transform: uppercase;
+            max-width: 509px;
+    }
+    &__description {
+        font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: $second-text-color;
+            margin: 35px 0;
+            max-width: 376px;
+    }
 }
