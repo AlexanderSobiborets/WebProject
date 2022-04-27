@@ -5,6 +5,17 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1046px;
+
+&--hero {
+    min-height: calc(100vh - 40px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-left: 15px;
+    padding-right: 15px;
+ }
 }
 
 .button {
@@ -16,7 +27,7 @@ body {
     line-height: 28px;
     text-align: center;
     letter-spacing: 0.2px;
-    border: 2px solid;
+    border: 1px solid;
     transition: all .5s ease;
     
     &--rounded {
@@ -40,5 +51,12 @@ body {
             color: $white;
             background-color: $secondary-color-1;
             }
+    }
+}
+
+.icon-svg { 
+    fill: $secondary-color-1;
+    &:hover {
+        fill: $white;
     }
 }
