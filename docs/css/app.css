@@ -273,8 +273,8 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
   border: 1px solid;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: color 0.5s ease, background-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
 }
 .button--rounded {
   border-radius: 37px;
@@ -291,6 +291,7 @@ body {
 .button--secondary {
   background-color: transparent;
   border-color: #00A0C1;
+  color: #00A0C1;
 }
 .button--secondary:hover {
   color: #fff;
@@ -313,7 +314,7 @@ body {
 }
 
 .header-bar {
-  height: 140px;
+  height: 104px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,8 +338,9 @@ body {
 }
 .header-bar__menu-item {
   display: inline-block;
-  /* &:not(:last-child) {
-       margin-right: 0;*/
+  /*&:not(:last-child) {
+      margin-right: 21px;
+  }*/
 }
 .header-bar__menu-item + .header-bar__menu-item {
   margin-left: 21px;
@@ -348,9 +350,9 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
+  letter-spacing: 0.2px;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
-  letter-spacing: 0.2px;
 }
 .header-bar__menu-link:hover {
   color: #252842;

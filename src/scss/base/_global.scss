@@ -6,20 +6,21 @@ body {
     margin: 0 auto;
     max-width: 1046px;
 
-&--hero {
-    min-height: calc(100vh - 40px);
+    &--hero {
+        min-height: calc(100vh - 40px);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-    padding-left: 15px;
-    padding-right: 15px;
- }
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .button {
     display: inline-block;
+
     padding: 10px 36px;
 
     font-weight: 700;
@@ -27,9 +28,12 @@ body {
     line-height: 28px;
     text-align: center;
     letter-spacing: 0.2px;
+
     border: 1px solid;
-    transition: all .5s ease;
-    
+
+    transition: color .5s ease, background-color .5s ease;
+    // transition: all .5s ease;
+
     &--rounded {
         border-radius: 37px;
     }
@@ -38,24 +42,28 @@ body {
         background-color: $primary-color;
         border-color: $primary-color;
         color: $white;
+
         &:hover {
-        color: $primary-color;
-        background-color: transparent;
+            color: $primary-color;
+            background-color: transparent;
         }
     }
-   
+
     &--secondary {
         background-color: transparent;
         border-color: $secondary-color-1;
+        color: $secondary-color-1;
+
         &:hover {
             color: $white;
             background-color: $secondary-color-1;
-            }
+        }
     }
 }
 
 .icon-svg { 
     fill: $secondary-color-1;
+
     &:hover {
         fill: $white;
     }
