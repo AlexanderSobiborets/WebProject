@@ -1,10 +1,10 @@
-/*!******************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
-  \******************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
+  \*********************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap);
-/*!**********************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss (1) ***!
-  \**********************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss (1) ***!
+  \*************************************************************************************************************************************************************/
 /* By Athlon Front-End Team */
 /* Core variables */
 /**
@@ -244,6 +244,19 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+[class$=__container] {
+  margin: 0 auto;
+  max-width: 1046px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1046px;
@@ -262,6 +275,27 @@ body {
           justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+[class$=__header] {
+  margin: 0 auto;
+  max-width: 510px;
+  text-align: center;
+}
+
+.title-2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252842;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .button {
