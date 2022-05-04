@@ -1,0 +1,42 @@
+.section-about {
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+
+    &__info {
+        max-width: 330px;
+        padding-left: 50px;
+    }
+
+    &__item { 
+        padding: 15px 0;
+
+        & > :first-child {
+            font-weight: 700;
+            padding-bottom: 5px;
+        }
+
+        &--pseudo{
+            position: relative;
+            padding-left: 50px;
+
+            &:before { 
+                content: url(../images/content/icn-settings.icn-md-1.svg);
+                position: absolute;
+                height: 32px;
+                width: 32px;
+                left: 0;
+            }
+        }
+
+        &--bg {
+            padding-left: 50px;
+            background-image: url(../images/content/icn-settings.icn-md-2.svg);
+            background-repeat: no-repeat;
+            background-position: top 10px left 0px;
+        }
+    }
+}
