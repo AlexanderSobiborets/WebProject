@@ -117,6 +117,11 @@ module.exports = {
             ignore: ['*.DS_Store', 'Thumbs.db'],
           },
         },
+        {
+          from: path.resolve(environment.paths.source, 'videos'),
+          to: path.resolve(environment.paths.output, 'videos'),
+          toType: 'dir',
+        },
       ],
     }),
   ].concat(htmlPluginEntries),
