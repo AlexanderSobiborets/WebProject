@@ -11,8 +11,10 @@ p {
 }
 
 [class$="__container"] {
-    margin: 0 auto;
-    max-width: 1046px;
+   margin: 0 auto;
+  max-width: 1076px;
+  padding: 0 15px;
+  height: 100%;
 }
 
 .container {
