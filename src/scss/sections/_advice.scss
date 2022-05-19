@@ -1,6 +1,9 @@
 .advice {
   padding: 137px 0 90px;
   background-color: $background-color;
+  @media (max-width: 767px) {
+    padding: 20px 20px 90px;
+  }
   &__descr {
     margin-bottom: 45px;
   }

@@ -43,9 +43,11 @@ p {
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.2px;
-    color: $text-color;    
-    margin-bottom: 20px;
-}
+    color: $text-color;
+    max-width: 480px;
+    margin: 0 auto 10px;
+    opacity: 1;
+    }
 
 .section {
     padding-top: 100px;
