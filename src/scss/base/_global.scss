@@ -56,19 +56,15 @@ p {
 
 .button {
     display: inline-block;
-
     padding: 10px 36px;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 28px;
     text-align: center;
     letter-spacing: 0.2px;
-
     border: 1px solid;
-
     transition: color .5s ease, background-color .5s ease;
-    // transition: all .5s ease;
+    
 
     &--rounded {
         border-radius: 37px;

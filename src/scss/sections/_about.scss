@@ -43,9 +43,12 @@
             background-position: top 10px left 0px;
         }
     }
-
     &__video-container {
         position: relative;
+        height: 400px;
+       
+        @media (max-width:991px){
+        }
     }
 
     &__video-overlay {
@@ -57,5 +60,7 @@
         z-index: 1;
         pointer-events: none;
         background-image: url(../images/content/card-item.png);
+        @media (max-width:991px){
+        }
 }
  }

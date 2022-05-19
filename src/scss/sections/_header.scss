@@ -69,8 +69,14 @@
 
 
 .header-hero {
-    margin-top: 80px;
-    margin-bottom: 50px;
+  margin-bottom: 40px;
+  &__button-for-mobile{
+    @media (max-width:442px){
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+  }
 
     &__title {
       color: $text-color;
